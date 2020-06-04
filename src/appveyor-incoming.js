@@ -28,7 +28,7 @@ class Script {
       statusText = `failed`;
     }
 
-    let attachmentText = `Commit [${data.eventData.commitId}](${data.eventData.commitUrl}) by ${data.eventData.commitAuthor}`;
+    let attachmentText = `Commit [${data.eventData.commitId}](${data.eventData.commitUrl}+/commit/${data.eventData.commitId}) by ${data.eventData.commitAuthor}`;
     if(data.eventData.isPullRequest) {
       attachmentText += ` in PR [#${data.eventData.pullRequestId}](${data.eventData.pullRequestUrl})`;
     }
@@ -38,7 +38,7 @@ class Script {
       content: {
         username: USERNAME,
         icon_url: AVATAR_URL,
-        text: `Build [#${data.eventData.buildNumber}](${data.eventData.buildUrl}) has ${statusText} for project ${data.eventData.projectName}.`,
+        text: `Build [#${data.eventData.buildNumber}](${data.eventData.buildUrl}) ${data.eventData.projectName} ${statusText}.`,
         attachments: [{
           text: attachmentText,
           color: attachmentColor
