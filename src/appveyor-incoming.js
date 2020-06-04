@@ -2,7 +2,7 @@
  * appveyor-incoming.js
  * Add AppVeyor notifications via a new WebHook in Rocket.Chat
  * @license MIT
- * @version 0.3
+ * @version 0.5
  * @author  CrazyMax, https://github.com/crazy-max
  * @updated 04/06/2020 by Ramon Joaquim
  * @link    https://github.com/crazy-max/rocketchat-appveyor
@@ -28,7 +28,7 @@ class Script {
       statusText = `failed`;
     }
 
-    let attachmentText = `Commit [${data.eventData.commitId}](${data.eventData.repositoryName}+/commit/${data.eventData.commitId}) by ${data.eventData.commitAuthor}`;
+    let attachmentText = `Commit [${data.eventData.commitId}](${data.eventData.repositoryName.replace('.git','')}/commit/${data.eventData.commitId}) by ${data.eventData.commitAuthor}`;
     if(data.eventData.isPullRequest) {
       attachmentText += ` in PR [#${data.eventData.pullRequestId}](${data.eventData.pullRequestUrl})`;
     }
