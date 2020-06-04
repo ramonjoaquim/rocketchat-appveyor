@@ -28,7 +28,7 @@ class Script {
       statusText = `failed`;
     }
 
-    let attachmentText = `Commit [${data.eventData.commitId}](${data.eventData.commitUrl}+/commit/${data.eventData.commitId}) by ${data.eventData.commitAuthor}`;
+    let attachmentText = `Commit [${data.eventData.commitId}](${data.eventData.repositoryName}+/commit/${data.eventData.commitId}) by ${data.eventData.commitAuthor}`;
     if(data.eventData.isPullRequest) {
       attachmentText += ` in PR [#${data.eventData.pullRequestId}](${data.eventData.pullRequestUrl})`;
     }
