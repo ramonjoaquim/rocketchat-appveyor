@@ -2,9 +2,9 @@
  * appveyor-incoming.js
  * Add AppVeyor notifications via a new WebHook in Rocket.Chat
  * @license MIT
- * @version 0.2
+ * @version 0.3
  * @author  CrazyMax, https://github.com/crazy-max
- * @updated 2018-10-14
+ * @updated 04/06/2020 by Ramon Joaquim
  * @link    https://github.com/crazy-max/rocketchat-appveyor
  */
 
