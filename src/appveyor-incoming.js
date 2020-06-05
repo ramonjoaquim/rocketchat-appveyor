@@ -4,7 +4,7 @@
  * @license MIT
  * @version 0.5
  * @author  CrazyMax, https://github.com/crazy-max
- * @updated 04/06/2020 by Ramon Joaquim
+ * @updated 05/06/2020 by Ramon Joaquim
  * @link    https://github.com/crazy-max/rocketchat-appveyor
  */
 
@@ -29,6 +29,10 @@ class Script {
     }
 
     let attachmentText = `Commit [${data.eventData.commitId}](${data.eventData.repositoryName.replace('.git','')}/commit/${data.eventData.commitId}) by ${data.eventData.commitAuthor}`;
+    if(attachmentText.includes("undefined")){
+      attachmentText = "Commit ";
+    }
+
     if(data.eventData.isPullRequest) {
       attachmentText += ` in PR [#${data.eventData.pullRequestId}](${data.eventData.pullRequestUrl})`;
     }
