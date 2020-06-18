@@ -1,9 +1,4 @@
-<p align="center"><img height="128" src="https://github.com/crazy-max/rocketchat-appveyor/blob/master/res/rocketchat-appveyor.png"></p>
-
-<p align="center">
-  <a href="https://github.com/sponsors/crazy-max"><img src="https://img.shields.io/badge/sponsor-crazy--max-181717.svg?logo=github&style=flat-square" alt="Become a sponsor"></a>
-  <a href="https://www.paypal.me/crazyws"><img src="https://img.shields.io/badge/donate-paypal-00457c.svg?logo=paypal&style=flat-square" alt="Donate Paypal"></a>
-</p>
+<p align="center"><img height="128" src="https://github.com/ramonjoaquim/rocketchat-appveyor/blob/master/res/rocketchat-appveyor.png"></p>
 
 ## About
 
@@ -47,11 +42,6 @@ This script will generate notifications for the following build events:
 
 If you want more customizations, please look in AppVeyor documentation: <https://www.appveyor.com/docs/notifications/#webhooks>
 
-## How can I help ?
-
-All kinds of contributions are welcome :raised_hands:! The most basic way to show your support is to star :star2: the project, or to raise issues :speech_balloon: You can also support this project by [**becoming a sponsor on GitHub**](https://github.com/sponsors/crazy-max) :clap: or by making a [Paypal donation](https://www.paypal.me/crazyws) to ensure this journey continues indefinitely! :rocket:
-
-Thanks again for your support, it is much appreciated! :pray:
 
 ## License
 
